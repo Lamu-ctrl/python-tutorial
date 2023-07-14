@@ -8,27 +8,29 @@
 # arr2 = [10, 'hello world', 8.7]
 
 
-# print(type(arr1)) #檢查形式
+# print(type(arr1))  # 檢查形式
 # print(arr1)
 # arr1[0] = [1, 2, 3]
-# print(arr1)  # 可以操作某一個元
+# print(arr2[1])# 可以操作某一個元
+# print(arr1)
 # print(arr2)  # 每節車廂可以不同data type
 
 # # 補充 : List 操作參考資料 https://www.learncodewithmike.com/2019/12/python-list.html
 # # a.宣告
-# arr1 = [1, 2, 3 , 4 ]
+# arr1 = [1, 2, 3, 4]
 # # b.存取
 # print(arr1[0])  #第一個
 # print(arr1[1])  #第二個
 # print(arr1[-1]) #最後一個
-# print(arr1[1:]) #第二個到最後一個
-# print(" arr1[0:3] : ", arr1[0:3] )  #0~2 不包含尾巴 [1, 2, 3]
-# print(arr1[:2]) #0~1 不包含2
-# print(arr1[:]) #全
+# print(arr1[1:])  # 第二個到最後一個
+# print(" arr1[0:3] : ", arr1[0:3])  # 0~2 不包含尾巴 [1, 2, 3]
+# print(arr1[:2])  # 0~1 不包含2
+# print(arr1[:])  # 全
+
 # # c.新增串列元素的方法
 
 # # append() 附加
-# arr1 = [1, 2, 3 , 4 ]
+# arr1 = [1, 2, 3, 4]
 # print(arr1)
 # arr1.append(5)
 # print(arr1)
@@ -44,11 +46,12 @@
 # ======================================
 
 
-# names=["Mary","Bob","Jim","Rere"]
-# print("for x in names: \n")
+names = ["Mary", "Bob", "Jim", "Rere"]
+w = ["40", "20", "50", "80"]
+print("for x in names: \n")
 # for x in names:
 #     print(x)
-# # 原理逐個取出names中的元素
+# 原理逐個取出names中的元素
 
 # for name in names:
 #     print(name)
@@ -59,9 +62,9 @@
 # for i in range(10):
 #     print(i)
 
-# print("names[i] \n")
-# for i in range(4):
-#     print(names[i])
+print("names[i] \n")
+for i in range(1, 4):
+    print(names[i], " ", w[i])
 
 # ======================================
 # # 3. Range
@@ -77,20 +80,20 @@
 # #     stop：停止點
 # #     step：間隔
 
-# r1 = range(10)
+# r1 = range(5, 10)
 # r2 = range(5, 50, 5)
 
 # ======================================
 # 練習
 # ======================================
-# 2a
-# insert
-# 題目敘述:有一升冪數列，今有一數字需放入其中，並且結束後仍須為升冪數列
-x = input("插入一數字 : ")
-List1 = [1, 5, 8, 12, 20, 200]
+# # 2a
+# # insert
+# # 題目敘述:有一升冪數列，今有一數字需放入其中，並且結束後仍須為升冪數列
+# x = input("插入一數字 : ")
+# List1 = [1, 5, 8, 12, 20, 200]
 
-print("原數列", List1)
-print("插入", x)
+# print("原數列", List1)
+# print("插入", x)
 
 # ======================================
 
@@ -114,6 +117,7 @@ List1 = [1, 5, 8, 12, 20, 200]
 # 2e
 # 第一個陣列包含0~20中的偶數
 # 另一個包含0~20中的奇數
+
 # 然後請用一個for迴圈印出以下結果：
 # 1 <---> 2
 # 3 <---> 4
